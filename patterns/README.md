@@ -15,6 +15,7 @@ This directory contains canonical threat-pattern definitions intended to remain 
 3. [Threat Seeding](threat-seeding.md) — `consumer-pred-003`
 4. [Protective Interception](protective-interception.md) — `consumer-pred-004`
 5. [Entrenched Control](entrenched-control.md) — `consumer-pred-005`
+6. [Distributed Flow-Limited Amplification](distributed-flow-limited-amplification.md) — `consumer-pred-006`
 
 ## Common Structure
 
