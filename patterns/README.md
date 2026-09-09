@@ -1,7 +1,7 @@
 ---
 title: "Threat Pattern Registry"
 status: "provisional"
-version: "0.1"
+version: "0.2"
 ---
 
 # Threat Pattern Registry
@@ -10,12 +10,18 @@ This directory contains canonical threat-pattern definitions intended to remain 
 
 ## Current Patterns
 
+### Consumer / Platform Abuse
+
 1. [Bait-and-Gate](bait-and-gate.md) — `consumer-pred-001`
 2. [Security Authority Inversion](security-authority-inversion.md) — `consumer-pred-002`
 3. [Threat Seeding](threat-seeding.md) — `consumer-pred-003`
 4. [Protective Interception](protective-interception.md) — `consumer-pred-004`
 5. [Entrenched Control](entrenched-control.md) — `consumer-pred-005`
 6. [Distributed Flow-Limited Amplification](distributed-flow-limited-amplification.md) — `consumer-pred-006`
+
+### Institutional / Governance
+
+7. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
 
 ## Common Structure
 
@@ -30,6 +36,15 @@ Each pattern should contain, at minimum:
 - related patterns
 - pattern composition notes
 - case-reference hooks
+
+## Supporting Layers
+
+The registry now separates four layers:
+
+- `patterns/` — reusable behavior signatures
+- `models/` — evidence, dependency, and detection logic
+- `cases/` — application of patterns to specific entities or incidents
+- `evidence/` — provenance, timelines, relationship graphs, and source records
 
 ## Separation of Pattern and Case Evidence
 
