@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:envelope:v0.1",
+  "title": "Triadic Exchange Envelope",
+  "description": "Language-neutral wrapper carried across SOURCE -> FACILITATOR -> RESOLVER boundaries.",
+  "type": "object",
+  "required": ["contract_version", "message_id", "message_type", "created_at", "payload", "provenance"],
+  "properties": {
+    "contract_version": {"const": "0.1"},
+    "message_id": {"type": "string", "minLength": 1},
+    "correlation_id": {"type": ["string", "null"]},
+    "causation_id": {"type": ["string", "null"]},
+    "message_type": {
+      "enum": ["source_observation", "facilitator_dispatch", "resolver_request", "resolver_result", "state_transition"]
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "producer": {
+      "type": "object",
+      "required": ["id", "role"],
+      "properties": {
+        "id": {"type": "string"},
+        "role": {"enum": ["source", "facilitator", "resolver", "governor"]},
+        "implementation": {"type": ["string", "null"]},
+        "version": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "payload": {"type": "object"},
+    "provenance": {"$ref": "provenance.schema.json"},
+    "integrity": {
+      "type": "object",
+      "properties": {
+        "algorithm": {"type": "string"},
+        "digest": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
