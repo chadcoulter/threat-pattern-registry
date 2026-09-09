@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:state-transition:v0.1",
+  "title": "Claim State Transition",
+  "description": "Explicit transition proposal or record for claim authority and confidence states.",
+  "type": "object",
+  "required": ["transition_id", "subject_id", "from_state", "to_state", "reason", "actor_id", "timestamp"],
+  "properties": {
+    "transition_id": {"type": "string"},
+    "subject_id": {"type": "string"},
+    "from_state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+    "to_state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+    "reason": {"type": "string"},
+    "actor_id": {"type": "string"},
+    "actor_role": {"enum": ["source", "facilitator", "resolver", "governor"]},
+    "authority_basis": {"type": ["string", "null"]},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["proposed", "accepted", "rejected", "superseded"]}
+  },
+  "additionalProperties": false
+}
