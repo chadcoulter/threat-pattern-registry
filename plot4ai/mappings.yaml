@@ -1,0 +1,10 @@
+version: 0.1
+mappings: []
+
+# Mapping record shape:
+# - source_id: <PLOT4AI card id>
+#   source_label: <PLOT4AI label>
+#   target_pattern: <local pattern id>
+#   relationship: component | related | precursor | mitigation
+#   confidence: potential | corroborated | resolved
+#   notes: <local analysis>
