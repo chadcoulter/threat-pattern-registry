@@ -18,14 +18,15 @@ This directory contains canonical threat-pattern definitions intended to remain 
 4. [Protective Interception](protective-interception.md) — `consumer-pred-004`
 5. [Entrenched Control](entrenched-control.md) — `consumer-pred-005`
 6. [Distributed Flow-Limited Amplification](distributed-flow-limited-amplification.md) — `consumer-pred-006`
+7. [Fake Seller Profile Pattern](fake-seller-profile.md) — `consumer-pred-007`
 
 ### Institutional / Governance
 
-7. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
+8. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
 
 ### Design / Transformation
 
-8. [Renewable Design Pattern](renewable-design.md) — `design-renewal-001`
+9. [Renewable Design Pattern](renewable-design.md) — `design-renewal-001`
 
 ## Common Structure
 
