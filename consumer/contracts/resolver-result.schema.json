@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:resolver-result:v0.1",
+  "title": "Resolver Result Payload",
+  "description": "Result returned by a resolver. A resolver proposes epistemic state changes; the facilitator records and routes them.",
+  "type": "object",
+  "required": ["result_id", "request_id", "subject_id", "decision", "output_state", "basis", "proposed_transition"],
+  "properties": {
+    "result_id": {"type": "string"},
+    "request_id": {"type": "string"},
+    "subject_id": {"type": "string"},
+    "decision": {"enum": ["supported", "unsupported", "inconclusive", "contradicted", "retracted", "revoked"]},
+    "output_state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+    "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "basis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reference_id", "relationship"],
+        "properties": {
+          "reference_id": {"type": "string"},
+          "relationship": {"enum": ["supports", "contradicts", "qualifies", "supersedes"]},
+          "weight": {"type": ["number", "null"]},
+          "notes": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reference_id", "description"],
+        "properties": {
+          "reference_id": {"type": "string"},
+          "description": {"type": "string"},
+          "severity": {"enum": ["minor", "material", "fatal"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "proposed_transition": {"$ref": "state-transition.schema.json"},
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+    "resolver_notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
