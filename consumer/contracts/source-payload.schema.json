@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:source-payload:v0.1",
+  "title": "Source Observation Payload",
+  "description": "Payload emitted by a source adapter after observing or retrieving an external artifact.",
+  "type": "object",
+  "required": ["artifact_id", "artifact_type", "content", "source_state"],
+  "properties": {
+    "artifact_id": {"type": "string"},
+    "artifact_type": {"type": "string"},
+    "content": {"type": ["object", "array", "string", "number", "boolean", "null"]},
+    "source_state": {"enum": ["observed", "retrieved", "validated", "rejected"]},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_id", "statement", "state"],
+        "properties": {
+          "claim_id": {"type": "string"},
+          "statement": {"type": "string"},
+          "state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+          "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "observations": {"type": "array", "items": {"type": "object"}},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
