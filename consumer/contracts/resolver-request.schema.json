@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:resolver-request:v0.1",
+  "title": "Resolver Request Payload",
+  "description": "Language-neutral request sent by the facilitator to a resolver.",
+  "type": "object",
+  "required": ["request_id", "subject_id", "intent", "input_state", "evidence_refs"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "subject_id": {"type": "string"},
+    "intent": {"enum": ["corroborate", "resolve", "re_resolve", "review_transition"]},
+    "input_state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+    "claim": {
+      "type": "object",
+      "required": ["claim_id", "statement"],
+      "properties": {
+        "claim_id": {"type": "string"},
+        "statement": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "pattern_refs": {"type": "array", "items": {"type": "string"}},
+    "prior_resolution_refs": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "object"},
+    "required_output": {
+      "type": "array",
+      "items": {
+        "enum": ["decision", "basis", "confidence", "contradictions", "proposed_transition", "unresolved_questions"]
+      }
+    }
+  },
+  "additionalProperties": false
+}
