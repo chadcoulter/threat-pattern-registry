@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:provenance:v0.1",
+  "title": "Provenance Envelope",
+  "description": "Provenance carried without loss through every transformation and resolution step.",
+  "type": "object",
+  "required": ["origin", "lineage"],
+  "properties": {
+    "origin": {
+      "type": "object",
+      "required": ["source_system", "source_reference", "observed_at"],
+      "properties": {
+        "source_system": {"type": "string"},
+        "source_reference": {"type": "string"},
+        "source_version": {"type": ["string", "null"]},
+        "source_url": {"type": ["string", "null"], "format": "uri"},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "retrieved_at": {"type": ["string", "null"], "format": "date-time"},
+        "license": {"type": ["string", "null"]},
+        "content_digest": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step_id", "actor_id", "action", "timestamp"],
+        "properties": {
+          "step_id": {"type": "string"},
+          "actor_id": {"type": "string"},
+          "action": {"enum": ["observed", "retrieved", "validated", "normalized", "mapped", "dispatched", "resolved", "contradicted", "retracted", "authorized", "revoked"]},
+          "timestamp": {"type": "string", "format": "date-time"},
+          "input_digest": {"type": ["string", "null"]},
+          "output_digest": {"type": ["string", "null"]},
+          "notes": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reference"],
+        "properties": {
+          "reference": {"type": "string"},
+          "relationship": {"enum": ["supports", "contradicts", "context", "derived_from"]},
+          "locator": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
