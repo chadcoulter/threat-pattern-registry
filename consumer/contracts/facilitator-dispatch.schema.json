@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:threat-pattern-registry:contracts:facilitator-dispatch:v0.1",
+  "title": "Facilitator Dispatch Payload",
+  "description": "Payload created by the facilitator when selecting a transform or resolver path.",
+  "type": "object",
+  "required": ["dispatch_id", "subject_id", "input_state", "target_role", "intent"],
+  "properties": {
+    "dispatch_id": {"type": "string"},
+    "subject_id": {"type": "string"},
+    "input_state": {"enum": ["potential", "corroborated", "resolved", "authorized", "contradicted", "retracted", "revoked"]},
+    "target_role": {"enum": ["source", "facilitator", "resolver", "governor"]},
+    "target_id": {"type": ["string", "null"]},
+    "intent": {"enum": ["validate", "normalize", "corroborate", "resolve", "re_resolve", "authorize", "review", "retract", "revoke"]},
+    "selected_transform": {"type": ["string", "null"]},
+    "required_capabilities": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "object"},
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reference_id", "kind"],
+        "properties": {
+          "reference_id": {"type": "string"},
+          "kind": {"enum": ["artifact", "claim", "evidence", "pattern", "case", "prior_resolution"]},
+          "required": {"type": "boolean", "default": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "expected_output": {"type": "string"},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
