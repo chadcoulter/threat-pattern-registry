@@ -1,0 +1,17 @@
+source_system: plot4ai
+upstream:
+  repository: https://github.com/PLOT4ai/plot4ai-library
+  artifact: deck.json
+  ref: main
+license:
+  spdx: CC-BY-SA-4.0
+  attribution_required: true
+  sharealike_boundary: true
+sync:
+  strategy: pinned-commit
+  upstream_commit: null
+  retrieved_at: null
+  sha256: null
+notes:
+  - Upstream PLOT4AI content remains authoritative in the upstream repository.
+  - Local canonical threat-pattern prose must not silently absorb adapted PLOT4AI text.
