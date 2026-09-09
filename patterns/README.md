@@ -1,7 +1,7 @@
 ---
 title: "Threat Pattern Registry"
 status: "provisional"
-version: "0.2"
+version: "0.3"
 ---
 
 # Threat Pattern Registry
@@ -22,6 +22,10 @@ This directory contains canonical threat-pattern definitions intended to remain 
 ### Institutional / Governance
 
 7. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
+
+### Design / Transformation
+
+8. [Renewable Design Pattern](renewable-design.md) — `design-renewal-001`
 
 ## Common Structure
 
