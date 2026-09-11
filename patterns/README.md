@@ -1,7 +1,7 @@
 ---
 title: "Threat Pattern Registry"
 status: "provisional"
-version: "0.3"
+version: "0.4"
 ---
 
 # Threat Pattern Registry
@@ -19,14 +19,15 @@ This directory contains canonical threat-pattern definitions intended to remain 
 5. [Entrenched Control](entrenched-control.md) — `consumer-pred-005`
 6. [Distributed Flow-Limited Amplification](distributed-flow-limited-amplification.md) — `consumer-pred-006`
 7. [Fake Seller Profile Pattern](fake-seller-profile.md) — `consumer-pred-007`
+8. [Trusted Identity Injection](trusted-identity-injection.md) — `consumer-pred-008`
 
 ### Institutional / Governance
 
-8. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
+9. [Institutional Dependency Blind Spot](institutional-dependency-blind-spot.md) — `institutional-capture-001`
 
 ### Design / Transformation
 
-9. [Renewable Design Pattern](renewable-design.md) — `design-renewal-001`
+10. [Renewable Design Pattern](renewable-design.md) — `design-renewal-001`
 
 ## Common Structure
 
@@ -36,7 +37,7 @@ Each pattern should contain, at minimum:
 - definition
 - structural signature
 - common indicators
-- extraction targets
+- extraction or attack targets
 - evidence threshold
 - related patterns
 - pattern composition notes
