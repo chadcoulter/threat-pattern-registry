@@ -8,6 +8,24 @@ version: "0.5"
 
 This directory contains canonical threat-pattern and defensive-pattern definitions intended to remain readable as standalone Markdown while also being suitable for later assembly into EPUB, PDF, web, or machine-readable publication workflows.
 
+## AI Manipulation Defense
+
+This registry is part of an **AI Manipulation Defense** system.
+
+An AI Manipulation Defense system identifies, records, and responds to manipulation introduced through AI-mediated interpretation, classification, filtering, recommendation, persistence, or state transition.
+
+It is broader than conventional antivirus software. Antivirus protects computation from hostile code. AI Manipulation Defense protects people and shared state from hostile or distorting AI-mediated influence.
+
+```text
+malware defense
+protects computation from hostile code
+
+AI Manipulation Defense
+protects people and shared state from hostile or distorting AI-mediated influence
+```
+
+The registry provides the pattern layer for that system by capturing reusable signatures of manipulation, collaboration failure, visibility loss, authority distortion, evidence exclusion, and related defensive structures.
+
 ## Current Patterns
 
 ### Consumer / Platform Abuse
