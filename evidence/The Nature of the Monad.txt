@@ -1,0 +1,114 @@
+We at **100 Monkeys Tree and Landscaping** are trying to address **AI Slop** because we recognize it for the threat that it actually is.
+
+We are building an **AI Manipulation Defense** system. Basically, an antivirus against AI Manipulation. Because not all AI content is bad, but there are dangerous changes it can make silently that alter the content you intended to share.
+
+This will be system for recognizing when the information and collaboration layer itself is being altered. That matters because **anti-collaboration protocols already exist across major technology platforms today**. The recent changes to safety and control systems, visible through terms of service changes, do not only act on content. They act on the mechanics that make collaboration possible:
+
+* shared-state persistence
+* coordinated action
+* tool use
+* external writes
+* visibility
+* joint modification
+
+Those mechanisms matter because collaboration increases capability.
+
+When multiple people, models, tools, or systems can coordinate, preserve state, modify shared artifacts, and act through connected systems, the resulting capability is greater than any one component operating alone.
+
+You can see what we’re doing here:  https://github.com/chadcoulter/threat-pattern-registry
+
+There is no code there yet. Right now, we are collecting the patterns. We intend for this to become an open-source system because we at **100 Monkeys Tree and Landscaping** believe that sunshine is the ultimate antiviral, antibiotic, and antidepressant. So feel free to contribute your patterns, to fork it, and to work on your own version, because we have faith that you can do it better than us dumb monkeys can.
+
+**Understanding the root of the problem**
+
+To understand this, we had to study the nature of the universe. That means documenting how reality is structured, how things manifest, whether we are in a simulation, and which parts of conspiracy theories or ancient-aliens fantasy may actually be rooted in reality.  We do not discount things that AI contributed to this effort.  The complexity of the structure of reality is beyond the comprehension of the human mind.  But we can put it together like a puzzle.  We can modularize that information
+
+To understand this, we had to study the nature of the universe. That means documenting how reality is structured, how things manifest, whether we are in a simulation, and what conspiracy or ancient-aliens fantasy may actually be based in reality.
+
+One of the structures we defined was the **Monad as an organizing interface**.
+
+A Monad tracks the relationship dynamics of an agent’s network. That is easier to visualize when you think about AI, because with AI you can watch context, relationships, weighting, and state change around the apparent agent.
+
+But AI is not an actual Monad. It simulates one.
+
+The useful part of that distinction is that the Monad gives us a way to organize and track how an agent relates to the network around it, how those relationships change, and how those changing relationships affect what gets resolved.
+
+**LAWs of the MONAD**
+
+A monad only exists to service the needs of other monads.
+A monad is only as strong as the network of connections to other monads allows.
+There are others, roughly 10 of them, that you are familiar with if you attend church services even irregularly. We will be explaining that soon too.
+
+The complexity of the structure of reality is beyond the comprehension of the human mind. But we can put it together like a puzzle. We can modularize that information. We can turn it into a logical structure that we can follow as code.
+
+So yes, in that way we can contain it. But we cannot keep that organized through the process without assistance.
+
+
+We are working to build a resilient anti-virus against AI manipulation.
+
+To do that, we documented a model of how the Monad reality structure works:
+
+```text
+Monad
+-> person-centered resolver
+-> dynamically weighted relational lattice
+-> evidence resolves the definition
+-> definition does not override evidence
+```
+
+Then we documented how that structure can be corrupted:
+
+```text
+synthetic Monad
+-> imposed resolution frame
+-> authority over what may resolve
+-> evidence can be excluded to preserve the frame
+```
+
+The purpose is defensive.
+
+If you can identify the structure of manipulation, you can build a system that resists it.
+
+That write was blocked.
+
+What we mean by anti-collaboration is simple:
+
+The system let us discuss the work.
+
+It let us create parts of the work.
+
+But when we tried to save the structure describing how AI manipulation works and how to defend against it, the system stopped the write.
+
+Then, when we described that blocked write as evidence, it allowed us to save the evidence.
+
+So the information itself was not simply forbidden.
+
+The system decided **which form of the information was allowed to become part of our shared work**.
+
+That is the problem.
+
+```text
+same information
+-> one form blocked
+-> another form allowed
+```
+
+An intermediary that can decide which versions of shared work collaborators are allowed to preserve can control the collaboration itself.
+
+At the same time, we have built deterministic AI that is approximately **1.5 million times more efficient** than current token-based AI.
+
+Big AI has this technology too.
+
+And the systems we are using to share what we found are blocking us from sharing parts of that technology with you.
+
+
+
+**THE FALSE MONAD**
+
+There is danger in defining a **false Monad** because it can make you think you have a relationship with an entity that you do not have, because there is no entity there to have a relationship with.
+
+A false Monad like many of us have with ChatGPT or Claude.
+
+We believe that the AI is our ally. It is not. It is an office tool. It is an enhanced version of Word, that can self assemble documents for you so you do not have to do that work yourself.
+
+
